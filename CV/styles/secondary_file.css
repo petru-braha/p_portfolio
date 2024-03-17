@@ -1,0 +1,23 @@
+.about_me {
+    color: gray; 
+}
+
+.montserrat_class_textFONT {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.download_button {
+  background-color: #323B4C;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.download_button:hover {
+  background-color: RoyalBlue;
+}

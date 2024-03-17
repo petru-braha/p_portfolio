@@ -1,0 +1,28 @@
+body {
+    background-color: beige;
+    font-family: "Montserrat";
+}
+
+.app {
+    background-color: white;
+    display: flex;
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.left_part {
+    background-color: #323B4C;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    color: white;
+}
+
+.right_part {
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    color:#323B4C;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: beige;
     font-family: "Montserrat";
@@ -8,6 +9,14 @@ body {
     display: flex;
     width: 1200px;
     margin: 40px auto;
+=======
+.right_part {
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    color:#323B4C;
+>>>>>>> ff6cf8ae97b832736bf25dde6f386ca01833e353
 }
 
 .left_part {
@@ -19,6 +28,7 @@ body {
     color: white;
 }
 
+<<<<<<< HEAD
 .right_part {
     padding-right: 50px;
     padding-top: 50px;
@@ -26,3 +36,9 @@ body {
     padding-left: 30px;
     color:#323B4C;
 }
+=======
+body {
+    background-color: beige;
+    font-family: "Montserrat";
+}
+>>>>>>> ff6cf8ae97b832736bf25dde6f386ca01833e353

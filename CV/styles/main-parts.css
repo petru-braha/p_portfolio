@@ -10,14 +10,6 @@ body {
     margin: 40px auto;
 }
 
-.right_part {
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    color:#323B4C;
-}
-
 .left_part {
     background-color: #323B4C;
     padding-left: 50px;

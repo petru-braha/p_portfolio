@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P_CV</title>
-    <link rel="stylesheet" href="./styles/secondary_file.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/specific-classes.css">
+    <link rel="stylesheet" href="./styles/specific-tags.css">
+    <link href="./styles/main-parts.css" rel="stylesheet" type="text/css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,73 +18,82 @@
         rel="stylesheet">
 </head>
 
-<header>
-    <h1> CV </h1>
-</header>
-
 <body>
-    <link href="./styles/main_parts.css" rel="stylesheet" type="text/css">
-
+    <script src="extra-proprieties.js"> </script>
     <!-- app -->
     <div class="app">
 
         <!-- left part -->
         <div class="left_part">
 
+            <figure> <img src="media/me.jpg" alt="Avatar" width="200 px" style="border-radius: 50%;" /> </figure>
+
             <!-- contact -->
-            <div class="left_part.div">
-                <figure> <img src="media/me.jpg" alt="my photo" width="200 px" /> </figure>
+            <div class="left-sections">
                 <h3> Contact: </h3>
-                <ul>
-                    <li>Phone: (+40) 740 543 254</li>
-                    <li> Email: <a style="color: white;" style="text-decoration: none;"
-                            href="mailto:petrubraha@gmail.com"> petrubraha@gmail.com </a> </li>
-                    <li> LinkedIn: <a style="color: white;"
-                            href="file:///A:/portfolio/CV/links/Petru%20Brah%C4%83%20LinkedIn.mhtml">
-                            www.linkedin.com/in/petru-braha01 </a> </li>
-                </ul>
+                <hr>
+                <div>
+                    <ul>
+                        <li>Phone: (+40) 740 543 254</li>
+                        <li> Email: <span style="color:  #323B4C">.</span> <a style="color: white;"
+                                style="text-decoration: none;" href="mailto:petrubraha@gmail.com"> petrubraha@gmail.com
+                            </a>
+                        </li>
+                        <li> LinkedIn: <a style="color: white;"
+                                href="file:///A:/portfolio/CV/links/Petru%20Brah%C4%83%20LinkedIn.mhtml">
+                                www.linkedin.com/in/petru-braha01 </a> </li>
+                    </ul>
+                        <h3 style="margin-top: 30px; margin-bottom: 1px;"> Portfolio: </h3>
+                        <a style="color: white" href="links/Petru Braha Portfolio.html">
+                            https://github.com/piedroooo/p_portfolio </a>
 
-                <h3> Portfolio: </h3>
-                <a style="color: white" href="links/Petru Braha Portfolio.html">
-                    https://github.com/piedroooo/p_portfolio </a>
-
-                <h4> Address: </h4>
-                <p> Iași, România </p>
+                        <h4 style="margin-top: 30px; margin-bottom: -12px;"> Address: </h4>
+                        <p> Iași, România </p>
+                </div>
             </div>
 
             <!-- education -->
-            <div>
+            <div class="left-sections">
                 <h3> Education: </h3>
-                <ul>
-                    <li>
-                        <p> Computer Science Bachelor Degree 2023 - present </p>
-                        <p> “Alexandru Ioan Cuza” University </p>
-                    </li>
-                    <li>
-                        <p> Mathematics & Computer Science 2018 - 2022 </p>
-                        <p> National College “Mihai Eminescu” Iași </p>
-                    </li>
-                </ul>
+                <hr>
+                <div class="left-sections">
+                    <ul>
+                        <li>
+                            <p> Computer Science Bachelor Degree 2023 - present </p>
+                            <p> “Alexandru Ioan Cuza” University </p>
+                        </li>
+                        <li>
+                            <p> Mathematics & Computer Science 2018 - 2022 </p>
+                            <p> National College “Mihai Eminescu” Iași </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- skills -->
-            <div>
+            <div class="left-sections">
                 <h3> Skills: </h3>
-                <ul>
-                    <li> C/C++ </li>
-                    <li> HTML, CSS, JavaScript </li>
-                    <li> Git/GitHub </li>
-                    <li> SQL </li>
-                </ul>
+                <hr>
+                <div>
+                    <ul>
+                        <li> C/C++ </li>
+                        <li> HTML, CSS, JavaScript </li>
+                        <li> Git/GitHub </li>
+                        <li> SQL </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- languages -->
-            <div>
+            <div class="left-sections">
                 <h3> Languages: </h3>
-                <ul>
-                    <li> English B2 </li>
-                    <li> French B2 </li>
-                </ul>
+                <hr>
+                <div>
+                    <ul>
+                        <li> English B2 </li>
+                        <li> French B2 </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -191,16 +204,12 @@
             <!-- end of right part-->
         </aside>
     </div>
-    <footer>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <button class="download_button" type="submit" onclick="window.open('links/Petru Braha CV.pdf')">
+    <footer>
+        <button class="download_button" type="button" onclick="download('links/Petru Braha CV.pdf')">
             <i class="fa fa-download"></i>
             Download CV.pdf
         </button>
-        <button class="download_button" type="button" onclick="download('links/Petru Braha CV.pdf')"> Download </button>
-
         <script src="for_download.js"> </script>
     </footer>
 

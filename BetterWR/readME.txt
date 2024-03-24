@@ -119,3 +119,21 @@ ZIP format
 + poti vizualiza si dezarhiva doar un singur element al arhivei
 + paraleliza procesul de arhivare pe CPU -> mai rapid
 - compresion ratio -- (unesti dubluri, ceva ce este redundant)
+
+Buttons:
+0 arhivare
+1 dezarhivare
+2 info
+3 STOP
+4 INAPOI
+5 GATA
+6 selecteaza
+7 mkdir
+8 fopen
+9 delete
+10 HUF
+11 LZW
+12 //pentru anunturi (de facut)
+
+primele 10 spatii din file_coordo sunt pentru selectate
+11->infinit for visible_files

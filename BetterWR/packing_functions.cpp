@@ -32,21 +32,10 @@ char* reverseArray(char arr[], int length)
 
 char* get_FILEname(char source_path[])
 {
-    char file_name[MAX]="";
-    memset(file_name, 0, sizeof file_name);
-    for (int i = strlen(source_path) - 1; i; i--)
-    {
-        if (source_path[i] == 47)
-        {
-            if (i != strlen(source_path) - 1)
-                break;
-        }
-        else
-            file_name[strlen(file_name)] = source_path[i];
-    }
-    file_name[strlen(file_name)] = '\0';
-    char* reversedArray = reverseArray(file_name, strlen(file_name));
-    strcpy(file_name, reversedArray);
-    file_name[strlen(file_name)] = '\0';
-    return file_name;
+    int length=strlen(source_path);
+    int index_context=0;
+    for(int i=0;i<length-1;i++)
+        if(source_path[i]=='/')
+            index_context=i;
+    return source_path+index_context+1;
 }

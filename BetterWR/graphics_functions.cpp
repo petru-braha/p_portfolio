@@ -48,17 +48,17 @@ void graphics_MENUbuttons()
         {
         case 0:
             graphic_button(x1, y1, x2, y2);
-            outtextxy(x1+15, y1+15, "arhivare");
+            outtextxy(x1+15, y1+15, "compress");
             break;
 
         case 1:
             graphic_button(x1, y1, x2, y2);
-            outtextxy(x1+15, y1+15, "dezarhivare");
+            outtextxy(x1+15, y1+15, "decompress");
             break;
 
         case 2:
             graphic_button(x1, y1, x2, y2);
-            outtextxy(x1+15, y1+15, "info++?");
+            outtextxy(x1+15, y1+15, "more info");
             break;
 
         case 3:
@@ -107,7 +107,7 @@ void graphics_GLOBALbuttons(int value)
         setcolor(4);
         settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
         graphic_button(1270, 840, 1470, 900);
-        outtextxy(1312, 860, "GATA!");
+        outtextxy(1312, 860, "GATA");
         coordo[5][0]=1270;
         coordo[5][1]=840;
         coordo[5][2]=1470;
@@ -127,9 +127,9 @@ void start_graphics(bool first_exe)
     setcolor(9);
 
     settextstyle(DEFAULT_FONT, HORIZ_DIR, 4);
-    outtextxy(1000, 200, "Algoritmi:");
+    outtextxy(1000, 200, "Algorithms:");
     settextstyle(DEFAULT_FONT, HORIZ_DIR, 3);
-    outtextxy(1050, 250, "-Huffman");
+    outtextxy(1050, 250, "-Huffman trees");
     outtextxy(1050, 270, "-Lempel-Ziv-Welch");
 
     graphics_GLOBALbuttons(3);
@@ -149,8 +149,9 @@ void graphics_EXPLbuttons()
     coordo[6][2]=180;
     coordo[6][3]=y+35;
     y+=35;
+
     ///accesarea se va face din doublu clic (folder/fisier)
-    //adauga folder
+    //add folder
     graphic_button(60, y-5, 180, y+35);
     outtextxy(70, y, "Mkdir");
     coordo[7][0]=60;

@@ -1,0 +1,54 @@
+body
+{
+    background-color: #FEC7B4;
+    margin: 40px;
+}
+
+.main_question
+{
+    margin-top: -5px;
+    font-size: 300%;
+    text-align: center;
+}
+
+.main_photo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 230px;
+    border-style:groove;
+    border-color: #F7418F;
+}
+
+.buttons
+{
+    margin-left: 550px;
+}
+
+button
+{
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    border-style: outset;
+    border-radius: 50px;
+    border-color: gainsboro;
+}
+button:hover
+{
+    background-color:antiquewhite;
+}
+
+hr
+{
+    background-color: #F7418F;
+    border-color: #F7418F;
+    margin-top: -25px;
+    width: 90%;
+    height: 5px;
+}

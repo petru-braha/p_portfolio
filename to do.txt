@@ -1,0 +1,5 @@
+portfolio website
+ai chatbot with nodejs
+sign language detector
+web scraping in python
+predicting sport matches with ML

@@ -1,20 +1,13 @@
 #include "libraries.h"
+
 #include "algorithms/huffman.h"
 #include "algorithms/lzw.h"
+
 #include "global_variables.h"
 #include "packing_functions.h"
 #include "graphics_functions.h"
 
-///EXPLORER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-bool last_step;
-char alg;
-short int file_nr_visible;
-char file_accessedPATH[MAX]="\0";
-char file_lastOPENED[MAX];
-char file_visible[MAX][MAX];
-
-void explorer(char mode[]);
-void file_explorer();
+#include "explorer/explorer.h"
 
 ///COMMANDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 struct point{
@@ -699,7 +692,7 @@ int main()
     return 0;
 }
 
-///EXPLORER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//expl
 void explorer(char mode[])
 {
     //sterge highlight
@@ -712,31 +705,32 @@ void explorer(char mode[])
     if(strcmp(mode, "partitive")==0)
     {
         char last_partitive=0;
-        for(int i='C'; i<='Z'; i++)
+        for(int i='A'; i<='Z'; i++)
         {
             char s[5]="\0";
             s[0]=char(i);
             s[1]=':';
             s[2]='/';
             s[3]='\0';
-            if(!is_folder(s))
-                break;
-            setcolor(15);
-            line(230, 143+y, 974, 143+y);
+            if(is_folder(s))
+            {
+                setcolor(15);
+                line(230, 143+y, 974, 143+y);
 
-            file_coordo[11+i-'C'][0]=230;
-            file_coordo[11+i-'C'][1]=143+y;
-            file_coordo[11+i-'C'][2]=974;
+                file_coordo[11+i-'C'][0]=230;
+                file_coordo[11+i-'C'][1]=143+y;
+                file_coordo[11+i-'C'][2]=974;
 
-            setcolor(9);
-            readimagefile("photos/folder2.jpg", 235, 150+y, 260, 150+y+25);
-            outtextxy(270, 150+y, s);
-            y+=40;
+                setcolor(9);
+                readimagefile("photos/folder2.jpg", 235, 150+y, 260, 150+y+25);
+                outtextxy(270, 150+y, s);
+                y+=40;
 
-            file_coordo[11+i-'C'][3]=143+y;
-            file_nr_visible++;
+                file_coordo[11+i-'C'][3]=143+y;
+                file_nr_visible++;
 
-            strcpy(file_visible[11+i-'C'], s);
+                strcpy(file_visible[11+i-'C'], s);
+            }
         }
         setcolor(15);
         line(230, 143+y, 974, 143+y);
@@ -792,6 +786,8 @@ void file_explorer()
 }
 
 
+
+///pack
 void help_build(char path_of_file[], FILE * p_bar, FILE * p_components)
 {
     if(is_folder(path_of_file))//folder

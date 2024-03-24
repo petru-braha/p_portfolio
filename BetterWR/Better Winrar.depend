@@ -88,18 +88,19 @@
 	<iostream>
 	<cstring>
 
-1710692289 source:a:\portfolio\betterwr\main.cpp
+1711305974 source:a:\portfolio\betterwr\main.cpp
 	"libraries.h"
 	"algorithms/huffman.h"
 	"algorithms/lzw.h"
 	"global_variables.h"
 	"packing_functions.h"
 	"graphics_functions.h"
+	"explorer/explorer.h"
 
-1710690079 source:a:\portfolio\betterwr\graphics_functions.cpp
+1711305501 source:a:\portfolio\betterwr\graphics_functions.cpp
 	<graphics.h>
 
-1710691431 source:a:\portfolio\betterwr\packing_functions.cpp
+1711304441 source:a:\portfolio\betterwr\packing_functions.cpp
 	<stdio.h>
 	<string.h>
 	<filesystem>
@@ -122,4 +123,6 @@
 	<stdlib.h>
 	<filesystem>
 	<direct.h>
+
+1711305491 a:\portfolio\betterwr\explorer\explorer.h
 
